@@ -1,5 +1,7 @@
 # PythonHitema
 
+![alt text](https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png?raw=true)
+
 # Guide de l'Utilisateur - Mon App de Recettes
 ## Introduction
 Bienvenue dans Mon App de Recettes, votre compagnon de cuisine ultime pour organiser, sauvegarder et partager vos recettes préférées. Que vous soyez un chef expérimenté ou un novice en cuisine, notre application vous aidera à garder vos recettes à portée de main, à les organiser de manière efficace, et à les partager facilement avec vos amis et votre famille.
