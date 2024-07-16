@@ -1,5 +1,30 @@
 # PythonHitema
 ![alt text](https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png)
+
+
+<h1 align="center">Welcome to readme-md-generator 👋</h1>
+<p align="center">
+  <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
+  <a href="https://www.npmjs.com/package/readme-md-generator">
+    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+  <a href="https://codecov.io/gh/kefranabg/readme-md-generator">
+    <img src="https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg" />
+  </a>
+  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
+    <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
+  </a>
+  <a href="https://twitter.com/FranckAbgrall">
+    <img alt="Twitter: FranckAbgrall" src="https://img.shields.io/twitter/follow/FranckAbgrall.svg?style=social" target="_blank" />
+  </a>
+</p>
+
+
+
+
 # Guide de l'Utilisateur - Mon App de Recettes
 ## Introduction
 Bienvenue dans Mon App de Recettes, votre compagnon de cuisine ultime pour organiser, sauvegarder et partager vos recettes préférées. Que vous soyez un chef expérimenté ou un novice en cuisine, notre application vous aidera à garder vos recettes à portée de main, à les organiser de manière efficace, et à les partager facilement avec vos amis et votre famille.
@@ -52,7 +77,7 @@ Nous apprécions vos retours pour améliorer notre application. Vous pouvez nous
 Feedback : feedback@monappderecettes.com
 
 ## Licence
-Mon App de Recettes est sous licence [Nom de la Licence]. Pour plus de détails, veuillez consulter le fichier LICENSE dans le répertoire principal de l'application.
+Mon App de Recettes est sous licence Copyright © 2024 Clément GUYOT. Pour plus de détails, veuillez consulter le fichier LICENSE dans le répertoire principal de l'application.
 
 Merci d'avoir choisi Mon App de Recettes ! Nous espérons que vous apprécierez utiliser notre application autant que nous avons apprécié la créer.
 
