@@ -1,17 +1,7 @@
 # PythonHitema
 
-### FR - Application de gestion des recettes de cuisine
-Cette application sert de guide pratique pour organiser, sauvegarder et partager des recettes de cuisine.
-
-### EN - Recipe management app 
-This app serves as a handy guide to organizing, saving, and sharing cooking recipes.
-
-
-
-
-
 # Guide de l'Utilisateur - Mon App de Recettes
-## Introduction FR
+## Introduction
 Bienvenue dans Mon App de Recettes, votre compagnon de cuisine ultime pour organiser, sauvegarder et partager vos recettes préférées. Que vous soyez un chef expérimenté ou un novice en cuisine, notre application vous aidera à garder vos recettes à portée de main, à les organiser de manière efficace, et à les partager facilement avec vos amis et votre famille.
 
 ## Fonctionnalités
@@ -29,12 +19,10 @@ Bienvenue dans Mon App de Recettes, votre compagnon de cuisine ultime pour organ
 
 ## Installation
 ### Prérequis
-* iOS 12.0 ou version ultérieure / Android 5.0 ou version ultérieure.
 * Connexion Internet pour les fonctionnalités de sauvegarde et de partage.
 ### Étapes d'Installation
-1. Téléchargement : Rendez-vous sur l'App Store ou Google Play Store et recherchez "Mon App de Recettes".
-2. Installation : Cliquez sur le bouton d'installation et attendez que l'application soit téléchargée et installée sur votre appareil.
-3. Lancement : Ouvrez l'application et suivez les instructions à l'écran pour créer un compte ou vous connecter.
+1. Téléchargement : Depuis la page GitHub lancer le telchargement
+2. Lancement : Ouvrez l'application et suivez les instructions à l'écran pour créer un compte ou vous connecter.
 
 ## Guide d'Utilisation
 ### Ajout d'une Recette
