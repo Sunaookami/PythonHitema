@@ -145,6 +145,108 @@ class App(customtkinter.CTk):
                     "1/2 botte de coriandre"
                 ],
                 "price": 8.50
+            },
+            "glace vanille": {
+                "ingredients": [
+                    "500 ml de lait",
+                    "200 ml de crème fraîche",
+                    "150 g de sucre",
+                    "4 jaunes d'œufs",
+                    "1 gousse de vanille"
+                ],
+                "price": 4.50
+            },
+            "glace chocolat": {
+                "ingredients": [
+                    "500 ml de lait",
+                    "200 ml de crème fraîche",
+                    "150 g de sucre",
+                    "4 jaunes d'œufs",
+                    "200 g de chocolat noir"
+                ],
+                "price": 5.00
+            },
+            "tarte à la pomme": {
+                "ingredients": [
+                    "1 pâte brisée",
+                    "4 pommes",
+                    "50 g de sucre",
+                    "30 g de beurre",
+                    "1 sachet de sucre vanillé"
+                ],
+                "price": 7.00
+            },
+            "cake chocolat": {
+                "ingredients": [
+                    "200 g de chocolat noir",
+                    "150 g de beurre",
+                    "150 g de sucre",
+                    "4 œufs",
+                    "100 g de farine",
+                    "1 sachet de levure"
+                ],
+                "price": 8.00
+            },
+            "spaghetti carbonara": {
+                "ingredients": [
+                    "200 g de guanciale (ou pancetta)",
+                    "4 jaunes d'œufs",
+                    "100 g de pecorino romano",
+                    "400 g de spaghetti",
+                    "Sel, poivre noir"
+                ],
+                "price": 12.00
+            },
+            "tajine de poulet aux olives et citrons confits": {
+                "ingredients": [
+                    "1 poulet entier coupé en morceaux",
+                    "2 citrons confits",
+                    "150 g d'olives vertes",
+                    "2 oignons",
+                    "3 gousses d'ail",
+                    "1 bouquet de coriandre",
+                    "1 bouquet de persil",
+                    "1 cuillère à café de curcuma",
+                    "1 cuillère à café de gingembre moulu",
+                    "1 cuillère à café de poivre noir",
+                    "Sel",
+                    "Huile d'olive"
+                ],
+                "price": 18.00
+            },
+            "paella": {
+                "ingredients": [
+                    "300 g de riz à paella",
+                    "200 g de moules",
+                    "200 g de calamars",
+                    "200 g de crevettes",
+                    "150 g de petits pois",
+                    "2 poivrons rouges",
+                    "1 oignon",
+                    "2 gousses d'ail",
+                    "1 litre de bouillon de volaille",
+                    "1 cuillère à café de paprika",
+                    "1 dose de safran",
+                    "Sel, poivre",
+                    "Huile d'olive"
+                ],
+                "price": 20.00
+            },
+            "bœuf bourguignon": {
+                "ingredients": [
+                    "1 kg de bœuf à braiser",
+                    "150 g de lardons",
+                    "1 bouteille de vin rouge de Bourgogne",
+                    "3 carottes",
+                    "1 oignon",
+                    "2 gousses d'ail",
+                    "1 bouquet garni",
+                    "200 g de champignons de Paris",
+                    "50 g de beurre",
+                    "3 cuillères à soupe de farine",
+                    "Sel, poivre"
+                ],
+                "price": 25.00
             }
         }
 
