@@ -1,12 +1,11 @@
-# PythonHitema
-<p align="center" width="100%">
-    <img width="80%" src="https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png"> 
-</p>
-
 <h1 align="center">Bienvenue sur CookHub 🍰👋</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+</p>
+
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png"> 
 </p>
 
 # Guide de l'Utilisateur - Mon App de Recettes
