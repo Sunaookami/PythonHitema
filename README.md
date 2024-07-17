@@ -1,6 +1,7 @@
 # PythonHitema
+<p align="center">
 ![alt text](https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png)
-
+</p>
 
 <h1 align="center">Bienvenue sur CookHub 🍰👋</h1>
 <p align="center">
