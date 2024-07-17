@@ -65,9 +65,9 @@ Welcome to CookHubs, your ultimate cooking companion for organizing, saving, and
 
 ## Features
 ### Recipe Organization
-Custom Categories: Sort your recipes by categories (appetizer, main course, dessert, etc.).
-Tags and Filters: Add tags for easy searching and use filters to quickly find what you need.
-Favorites: Mark your favorite recipes for quick access.
+* Custom Categories: Sort your recipes by categories (appetizer, main course, dessert, etc.).
+* Tags and Filters: Add tags for easy searching and use filters to quickly find what you need.
+* Favorites: Mark your favorite recipes for quick access.
 
 ### Secure Backup
 * Automatic Backup: All your recipes are automatically saved in the cloud.
@@ -75,7 +75,7 @@ Favorites: Mark your favorite recipes for quick access.
 
 ## Installation
 ### Prerequisites
-*Internet connection for download.
+* Internet connection for download.
 
 ### Installation Steps
 1. Download: Start the download from the GitHub page.
