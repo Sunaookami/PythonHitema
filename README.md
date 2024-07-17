@@ -8,7 +8,9 @@
     <img width="80%" src="https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png"> 
 </p>
 
-# Guide de l'Utilisateur - Mon App de Recettes
+<h1 align="center">Version Francaise 🇫🇷</h1>
+
+# Guide de l'Utilisateur - CookHub
 ## Introduction
 Bienvenue dans CookHubs, votre compagnon de cuisine ultime pour organiser, sauvegarder et partager vos recettes préférées. Que vous soyez un chef expérimenté ou un novice en cuisine, notre application vous aidera à garder vos recettes à portée de main, à les organiser de manière efficace, et à les partager facilement avec vos amis et votre famille.
 
@@ -45,11 +47,63 @@ Pour toute question ou assistance, veuillez contacter notre service client :
 ## Contributions et Feedback
 Nous apprécions vos retours pour améliorer notre application. Vous pouvez nous envoyer vos suggestions ou signaler des bugs via notre page de feedback :
 
-Feedback : feedback@cookhub.fr
+* Feedback : feedback@cookhub.fr
 
 ## Licence
 CookHub est sous licence Copyright © 2024. Pour plus de détails, veuillez consulter le fichier LICENSE dans le répertoire principal de l'application.
 
-Merci d'avoir choisi Mon App de Recettes ! Nous espérons que vous apprécierez utiliser notre application autant que nous avons apprécié la créer.
+Merci d'avoir choisi CookHub ! Nous espérons que vous apprécierez utiliser notre application autant que nous avons apprécié la créer.
 
 Bon appétit et bonne cuisine !
+
+
+<h1 align="center">English Version 🇬🇧</h1>
+
+# User Guide - My Recipe App
+## Introduction
+Welcome to CookHubs, your ultimate cooking companion for organizing, saving, and sharing your favorite recipes. Whether you are an experienced chef or a novice in the kitchen, our app will help you keep your recipes at your fingertips, organize them efficiently, and easily share them with your friends and family.
+
+## Features
+### Recipe Organization
+Custom Categories: Sort your recipes by categories (appetizer, main course, dessert, etc.).
+Tags and Filters: Add tags for easy searching and use filters to quickly find what you need.
+Favorites: Mark your favorite recipes for quick access.
+
+### Secure Backup
+* Automatic Backup: All your recipes are automatically saved in the cloud.
+* Offline Access: Access your recipes even without an Internet connection.
+
+## Installation
+### Prerequisites
+*Internet connection for download.
+
+### Installation Steps
+1. Download: Start the download from the GitHub page.
+2. Launch: Open the app and follow the on-screen instructions to prepare delicious meals.
+
+## User Guide
+### Adding a Recipe
+1. New Recipe: Click on the "Add a recipe" button in the main menu.
+2. Fill in the Details: Enter the recipe name, ingredients, instructions, and any other relevant information.
+3. Save: Tap "Save" to store your recipe.
+
+### Search and Filtering
+* Search Bar: Use the search bar at the top of the screen to find recipes by name, ingredient, or category.
+Advanced Filters: Apply filters to display specific recipes according to tags, preparation times, types of cuisine, etc.
+
+## Support and Assistance
+For any questions or assistance, please contact our customer service:
+
+* Email: support@cookhub.fr
+
+## Contributions and Feedback
+We appreciate your feedback to improve our app. You can send us your suggestions or report bugs via our feedback page:
+
+* Feedback: feedback@cookhub.fr
+
+License
+CookHub is licensed under Copyright © 2024. For more details, please refer to the LICENSE file in the main directory of the application.
+
+Thank you for choosing CooHub! We hope you enjoy using our app as much as we enjoyed creating it.
+
+Bon appétit and happy cooking!
