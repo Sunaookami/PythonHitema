@@ -60,7 +60,7 @@ Nous apprécions vos retours pour améliorer notre application. Vous pouvez nous
 Feedback : feedback@monappderecettes.com
 
 ## Licence
-Mon App de Recettes est sous licence Copyright © 2024 Clément GUYOT. Pour plus de détails, veuillez consulter le fichier LICENSE dans le répertoire principal de l'application.
+Mon App de Recettes est sous licence Copyright © 2024. Pour plus de détails, veuillez consulter le fichier LICENSE dans le répertoire principal de l'application.
 
 Merci d'avoir choisi Mon App de Recettes ! Nous espérons que vous apprécierez utiliser notre application autant que nous avons apprécié la créer.
 
