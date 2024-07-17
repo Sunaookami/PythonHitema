@@ -7,28 +7,7 @@
   <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" />
-  
-  <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
-  <a href="https://www.npmjs.com/package/readme-md-generator">
-    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="blank" />
-  </a>
-  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="blank" />
-  </a>
-  <a href="https://codecov.io/gh/kefranabg/readme-md-generator">
-    <img src="https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg" />
-  </a>
-  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
-    <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
-  </a>
 </p>
-
-
-
-
-https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue
-
-
 
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIdqv3eRXmvIM?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
