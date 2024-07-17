@@ -1,6 +1,6 @@
 # PythonHitema
 <p align="center" width="100%">
-    <img width="15%" src="https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png"> 
+    <img width="80%" src="https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png"> 
 </p>
 
 <h1 align="center">Bienvenue sur CookHub 🍰👋</h1>
