@@ -1,33 +1,5 @@
 import customtkinter
 
-class Recettes:
-    def __init__(self, nom, ingredients, prix):
-        self.nom = nom
-        self.ingredients = ingredients
-        self.prix = prix
-
-    def __str__(self):
-        return f"Recettes(nom={self.nom}, ingredients={self.ingredients}, prix={self.prix})"
-
-    def afficher_informations(self):
-        return (self.nom, self.ingredients, self.prix)
-
-class Glace(Recettes):
-    def __init__(self, nom, ingredients, prix):
-        super().__init__(nom, ingredients, prix)
-
-    def afficher_informations(self):
-        info = super().afficher_informations()
-        return info + ("Glace",)
-
-class Dessert(Recettes):
-    def __init__(self, nom, ingredients, prix):
-        super().__init__(nom, ingredients, prix)
-
-    def afficher_informations(self):
-        info = super().afficher_informations()
-        return info + ("Dessert",)
-
 def main():
     app = App()
     app.mainloop()
@@ -46,17 +18,30 @@ class App(customtkinter.CTk):
 
         # Configure main frame
         self.main_frame = customtkinter.CTkFrame(self)
-        self.main_frame.grid(row=0, column=1, rowspan=3)
+        self.main_frame.grid(row=0, column=1, rowspan=3, sticky="nsew")
         self.main_frame.grid_columnconfigure(1, weight=1)
         self.main_frame.grid_rowconfigure(1, weight=1)
 
-        # create sidebar frame with widgets
+        # Create search bar
+        self.search_bar = customtkinter.CTkEntry(self.main_frame, placeholder_text="Rechercher une entrée...")
+        self.search_bar.grid(row=0, column=0, padx=20, pady=10)
+        self.search_button = customtkinter.CTkButton(self.main_frame, text="Rechercher", command=self.search_recipes)
+        self.search_button.grid(row=0, column=1, padx=20, pady=10)
+
+        # Create result text box
+        self.result_text = customtkinter.CTkTextbox(self.main_frame)
+        self.result_text.grid(row=1, column=0, columnspan=2, padx=20, pady=10, sticky="nsew")
+
+        # Configure sidebar frame with widgets
         self.sidebar_frame = customtkinter.CTkFrame(self, width=140, corner_radius=0)
         self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
         self.sidebar_frame.grid_rowconfigure(5, weight=1)
         self.logo_label = customtkinter.CTkLabel(self.sidebar_frame, text="CookHub", font=customtkinter.CTkFont(size=20, weight="bold"))
         self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
-        
+        # self.sidebar_button_1 = customtkinter.CTkButton(self.sidebar_frame, text= "",command=self.split_pdf)
+        # self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=10)
+        # self.sidebar_button_2 = customtkinter.CTkButton(self.sidebar_frame, text="Envoyer", command=self.send_emails)
+        # self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=10)
         self.appearance_mode_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame, values=["Light", "Dark", "System"],
                                                                        command=self.change_appearance_mode_event)
         self.appearance_mode_optionemenu.grid(row=6, column=0, padx=20, pady=(10, 10))
@@ -64,53 +49,113 @@ class App(customtkinter.CTk):
                                                                command=self.change_scaling_event)
         self.scaling_optionemenu.grid(row=8, column=0, padx=20, pady=(10, 20))
 
-        # Configure recipe frame
-        self.recipe_frame = customtkinter.CTkFrame(self.main_frame)
-        self.recipe_frame.grid(row=0, column=1, padx=20, pady=20, sticky="nsew")
-        self.recipe_frame.grid_columnconfigure(0, weight=1)
-        self.recipe_frame.grid_rowconfigure((0, 1, 2, 3, 4, 5), weight=1)
+    def search_recipes(self):
+        query = self.search_bar.get().lower()
+        results = self.get_recipe_info(query)
+        self.result_text.delete(1.0, customtkinter.END)
+        self.result_text.insert(customtkinter.END, results)
 
-        self.title_label = customtkinter.CTkLabel(self.recipe_frame, text="Titre de la recette:")
-        self.title_label.grid(row=0, column=0, padx=20, pady=10, sticky="w")
-        self.title_entry = customtkinter.CTkEntry(self.recipe_frame)
-        self.title_entry.grid(row=0, column=1, padx=20, pady=10, sticky="ew")
+    def get_recipe_info(self, query):
+        recipes = {
+            "tartare de tomate": {
+                "ingredients": [
+                    "2 gros filets de daurade (2,2 kg)",
+                    "fleur de sel",
+                    "poivre noir sarawak",
+                    "huile d'olive de première pression provence fruitée verte",
+                    "3/4 d'un petit piment vert long (auquel on a retiré les pépins)",
+                    "le zeste de 1 citron vert",
+                    "le zeste de 1/4 d'orange",
+                    "1 càc de sel fin",
+                    "30 g de gingembre frais",
+                    "46 goutte(s) de tabasco",
+                    "180 g de jus de citron vert frais pressé",
+                    "100 g de jus d'orange",
+                    "1/2 oignon rouge coupé",
+                    "4 radis roses",
+                    "1/2 botte de coriandre"
+                ],
+                "price": 10
+            },
+            "caviar d’aubergine facile": {
+                "ingredients": [
+                    "4 belles aubergines",
+                    "4 ou 5 oignons nouveaux",
+                    "4 brins de basilic",
+                    "1 ou 2 gousses d'ail (facultatif)",
+                    "25 cl d'huile d'olive crétoise",
+                    "le jus de 2 ou 3 citrons",
+                    "vinaigre de vin",
+                    "sel, poivre"
+                ],
+                "price": 6
+            },
+            "salade catalane": {
+                "ingredients": [
+                    "1 laitue",
+                    "2 tomates",
+                    "2 oignons rouges",
+                    "1 poivron rouge cuit ou grillé",
+                    "quelques anchois",
+                    "quelques olives"
+                ],
+                "price": 8
+            },
+            "bruschetta à la tomate": {
+                "ingredients": [
+                    "1 pain italien",
+                    "500 g de tomates mûres",
+                    "1 oignon rouge",
+                    "huile d'olive",
+                    "sel, poivre",
+                    "1 gousse d'ail",
+                    "basilic"
+                ],
+                "price": 9
+            },
+            "salade japonaise": {
+                "ingredients": [
+                    "1 petit chou blanc",
+                    "graines de sésame blanc grillé",
+                    "30 cl de vinaigre de riz (à défaut utiliser du vinaigre de cidre)",
+                    "3 cuillère(s) à soupe de cassonade",
+                    "sel fin",
+                    "2 cuillère(s) à soupe de nuocmâm",
+                    "3 cuillère(s) à soupe d'huile neutre",
+                    "1 cuillère(s) à café de sauce soja"
+                ],
+                "price": 5
+            },
+            "ceviche de daurade": {
+                "ingredients": [
+                    "2 gros filets de daurade (2,2 kg)",
+                    "fleur de sel",
+                    "poivre noir sarawak",
+                    "huile d'olive de première pression provence fruitée verte",
+                    "3/4 d'un petit piment vert long (auquel on a retiré les pépins)",
+                    "le zeste de 1 citron vert",
+                    "le zeste de 1/4 d'orange",
+                    "1 càc de sel fin",
+                    "30 g de gingembre frais",
+                    "46 goutte(s) de tabasco",
+                    "180 g de jus de citron vert frais pressé",
+                    "100 g de jus d'orange",
+                    "1/2 oignon rouge coupé",
+                    "4 radis roses",
+                    "1/2 botte de coriandre"
+                ],
+                "price": 8.50
+            }
+        }
 
-        self.ingredients_label = customtkinter.CTkLabel(self.recipe_frame, text="Ingrédients:")
-        self.ingredients_label.grid(row=1, column=0, padx=20, pady=10, sticky="w")
-        self.ingredients_entry = customtkinter.CTkEntry(self.recipe_frame)
-        self.ingredients_entry.grid(row=1, column=1, padx=20, pady=10, sticky="ew")
-
-        self.price_label = customtkinter.CTkLabel(self.recipe_frame, text="Prix:")
-        self.price_label.grid(row=2, column=0, padx=20, pady=10, sticky="w")
-        self.price_entry = customtkinter.CTkEntry(self.recipe_frame)
-        self.price_entry.grid(row=2, column=1, padx=20, pady=10, sticky="ew")
-
-        self.type_label = customtkinter.CTkLabel(self.recipe_frame, text="Type:")
-        self.type_label.grid(row=3, column=0, padx=20, pady=10, sticky="w")
-        self.type_optionemenu = customtkinter.CTkOptionMenu(self.recipe_frame, values=["Recette", "Glace", "Dessert"])
-        self.type_optionemenu.grid(row=3, column=1, padx=20, pady=10, sticky="ew")
-
-        self.save_button = customtkinter.CTkButton(self.recipe_frame, text="Enregistrer", command=self.save_recipe)
-        self.save_button.grid(row=4, column=1, padx=20, pady=20, sticky="ew")
-
-        self.info_label = customtkinter.CTkLabel(self.recipe_frame, text="")
-        self.info_label.grid(row=5, column=0, columnspan=2, padx=20, pady=10, sticky="ew")
-    
-    def save_recipe(self):
-        title = self.title_entry.get()
-        ingredients = self.ingredients_entry.get().split(",")
-        price = self.price_entry.get()
-        type_recette = self.type_optionemenu.get()
-
-        if type_recette == "Glace":
-            recette = Glace(title, ingredients, price)
-        elif type_recette == "Dessert":
-            recette = Dessert(title, ingredients, price)
+        if query in recipes:
+            ingredients = "\n".join(recipes[query]["ingredients"])
+            price = recipes[query]["price"]
+            result = f"{query.title()}:\n\nIngrédients:\n{ingredients}\n\nPrix: {price} €"
         else:
-            recette = Recettes(title, ingredients, price)
+            result = "Recette non trouvée. Veuillez réessayer avec un autre nom de recette."
 
-        info = recette.afficher_informations()
-        self.info_label.configure(text=f"Recette enregistrée : {info}")
+        return result
 
     def change_appearance_mode_event(self, new_appearance_mode: str):
         customtkinter.set_appearance_mode(new_appearance_mode)
