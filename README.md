@@ -8,7 +8,7 @@
     <img width="80%" src="https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png"> 
 </p>
 
-<h1 align="center">Version Francaise 🇫🇷</h1>
+<h1 align="center">🇫🇷 Version Francaise</h1>
 
 # Guide de l'Utilisateur - CookHub
 ## Introduction
@@ -57,7 +57,7 @@ Merci d'avoir choisi CookHub ! Nous espérons que vous apprécierez utiliser not
 Bon appétit et bonne cuisine !
 
 
-<h1 align="center">English Version 🇬🇧</h1>
+<h1 align="center">🇬🇧 English Version</h1>
 
 # User Guide - My Recipe App
 ## Introduction
