@@ -3,6 +3,7 @@
   <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 </p>
+
 [![Écouter sur Spotify](https://img.shields.io/badge/Écouter%20sur-Spotify-green?style=for-the-badge&logo=spotify)](https://open.spotify.com/playlist/37i9dQZF1EIdqv3eRXmvIM?si=19472400305449f3)
 
 <p align="center" width="100%">
