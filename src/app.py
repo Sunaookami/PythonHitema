@@ -1,4 +1,7 @@
 import customtkinter
+from PIL import Image as PIL_images
+from tkinter import *
+import os 
 
 def main():
     app = App()
