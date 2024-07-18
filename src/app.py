@@ -16,32 +16,33 @@ class App(customtkinter.CTk):
         self.title("CookHub")
         self.geometry(f"{1100}x{580}")
 
-        # Configure main frame
+        # configure grid layout (4x4)
+        self.grid_columnconfigure(1, weight=1)
+        self.grid_columnconfigure((2, 3), weight=0)
+        self.grid_rowconfigure((0, 1, 2), weight=1)
+        
+        # create frame main_frame
         self.main_frame = customtkinter.CTkFrame(self)
-        self.main_frame.grid(row=0, column=1, rowspan=3, sticky="nsew")
+        self.main_frame.grid(row=0, column=1, rowspan=3, padx=(10, 10), pady=(10, 10), sticky="nsew")
         self.main_frame.grid_columnconfigure(1, weight=1)
-        self.main_frame.grid_rowconfigure(1, weight=1)
-
+        self.main_frame.grid_rowconfigure(0, weight=1)
+        
         # Create search bar
-        self.search_bar = customtkinter.CTkEntry(self.main_frame, placeholder_text="Rechercher une entrée...")
-        self.search_bar.grid(row=0, column=0, padx=20, pady=10)
-        self.search_button = customtkinter.CTkButton(self.main_frame, text="Rechercher", command=self.search_recipes)
-        self.search_button.grid(row=0, column=1, padx=20, pady=10)
+        self.search_bar = customtkinter.CTkEntry(self.main_frame, placeholder_text="Rechercher une recette")
+        self.search_bar.grid(row=4, column=1, columnspan=2, padx=(10, 0), pady=(20, 20), sticky="nsew")
+        self.search_button = customtkinter.CTkButton(self.main_frame, border_width=2, text="Rechercher", text_color=("gray10", "#DCE4EE"), command=self.search_recipes)
+        self.search_button.grid(row=4, column=3, padx=(20, 20), pady=(20, 20), sticky="nsew")
 
         # Create result text box
-        self.result_text = customtkinter.CTkTextbox(self.main_frame)
-        self.result_text.grid(row=1, column=0, columnspan=2, padx=20, pady=10, sticky="nsew")
+        self.result_text = customtkinter.CTkTextbox(self.main_frame, width=250)
+        self.result_text.grid(row=0, column=1, columnspan=3, padx=(10, 10), pady=(10, 10), sticky="nsew")
 
         # Configure sidebar frame with widgets
         self.sidebar_frame = customtkinter.CTkFrame(self, width=140, corner_radius=0)
         self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
-        self.sidebar_frame.grid_rowconfigure(5, weight=1)
+        self.sidebar_frame.grid_rowconfigure(5, weight=3)
         self.logo_label = customtkinter.CTkLabel(self.sidebar_frame, text="CookHub", font=customtkinter.CTkFont(size=20, weight="bold"))
         self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
-        # self.sidebar_button_1 = customtkinter.CTkButton(self.sidebar_frame, text= "",command=self.split_pdf)
-        # self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=10)
-        # self.sidebar_button_2 = customtkinter.CTkButton(self.sidebar_frame, text="Envoyer", command=self.send_emails)
-        # self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=10)
         self.appearance_mode_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame, values=["Light", "Dark", "System"],
                                                                        command=self.change_appearance_mode_event)
         self.appearance_mode_optionemenu.grid(row=6, column=0, padx=20, pady=(10, 10))
