@@ -16,6 +16,14 @@ class App(customtkinter.CTk):
         self.title("CookHub")
         self.geometry(f"{1100}x{580}")
 
+         # path to image
+        self.image_path = 'PythonHitema/src/CookHub.png'
+        
+        # to verify if the path to image exist
+        if not os.path.exists(self.image_path):
+            print(f"Image not found: {self.image_path}")
+            self.image_path = None
+        
         # configure grid layout (4x4)
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
@@ -41,15 +49,20 @@ class App(customtkinter.CTk):
         self.sidebar_frame = customtkinter.CTkFrame(self, width=140, corner_radius=0)
         self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
         self.sidebar_frame.grid_rowconfigure(5, weight=3)
-        self.logo_label = customtkinter.CTkLabel(self.sidebar_frame, text="CookHub", font=customtkinter.CTkFont(size=20, weight="bold"))
-        self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
-        self.appearance_mode_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame, values=["Light", "Dark", "System"],
+        self.appearance_mode_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame, values=["System","Light", "Dark"],
                                                                        command=self.change_appearance_mode_event)
         self.appearance_mode_optionemenu.grid(row=6, column=0, padx=20, pady=(10, 10))
         self.scaling_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame, values=["80%", "90%", "100%", "110%", "120%"],
                                                                command=self.change_scaling_event)
         self.scaling_optionemenu.grid(row=8, column=0, padx=20, pady=(10, 20))
 
+        # Affichage image
+        my_image = customtkinter.CTkImage(light_image=PIL_images.open(self.image_path),
+                                           dark_image=PIL_images.open(self.image_path),
+                                           size=(180, 180))  # Width x Height
+        my_label = customtkinter.CTkLabel(self, text="", image=my_image)
+        my_label.grid(row= 0, column=0, padx=20, pady=(20, 10))
+        
         # Add best recipes frame
         self.best_recipes_frame = customtkinter.CTkFrame(self)
         self.best_recipes_frame.grid(row=0, column=2, rowspan=4, padx=(10, 10), pady=(10, 10), sticky="nsew")
