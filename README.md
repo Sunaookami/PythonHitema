@@ -8,8 +8,9 @@
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/Sunaookami/PythonHitema/blob/main/Cook%20Hub.png"> 
 </p>
-
 <h1 align="center">🇫🇷 Version Francaise</h1>
+
+[![Écouter sur Spotify](https://img.shields.io/badge/Écouter%20sur-Spotify-green?style=for-the-badge&logo=spotify)](https://open.spotify.com/playlist/37i9dQZF1EIdqv3eRXmvIM?si=19472400305449f3)
 
 # Guide de l'Utilisateur - CookHub
 ## Introduction
