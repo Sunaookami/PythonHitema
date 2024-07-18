@@ -50,6 +50,16 @@ class App(customtkinter.CTk):
                                                                command=self.change_scaling_event)
         self.scaling_optionemenu.grid(row=8, column=0, padx=20, pady=(10, 20))
 
+        # Add best recipes frame
+        self.best_recipes_frame = customtkinter.CTkFrame(self)
+        self.best_recipes_frame.grid(row=0, column=2, rowspan=4, padx=(10, 10), pady=(10, 10), sticky="nsew")
+        self.best_recipes_label = customtkinter.CTkLabel(self.best_recipes_frame, text="Meilleures Recettes", font=customtkinter.CTkFont(size=16, weight="bold"))
+        self.best_recipes_label.grid(row=0, column=0, padx=20, pady=(10, 10))
+        
+        self.best_recipes_list = customtkinter.CTkTextbox(self.best_recipes_frame, width=200, height=700)
+        self.best_recipes_list.grid(row=1, column=0, padx=(10, 10), pady=(10, 10), sticky="nsew")
+        self.populate_best_recipes()
+
     def search_recipes(self):
         query = self.search_bar.get().lower()
         results = self.get_recipe_info(query)
@@ -260,6 +270,23 @@ class App(customtkinter.CTk):
 
         return result
 
+    def populate_best_recipes(self):
+        best_recipes = [
+            "tartare de tomate",
+            "caviar d’aubergine facile",
+            "salade catalane",
+            "bruschetta à la tomate",
+            "salade japonaise",
+            "ceviche de daurade",
+            "spaghetti carbonara",
+            "tajine de poulet aux olives et citrons confits",
+            "paella",
+            "bœuf bourguignon"
+        ]
+        
+        for recipe in best_recipes:
+            self.best_recipes_list.insert(customtkinter.END, f"{recipe.title()}\n")
+        
     def change_appearance_mode_event(self, new_appearance_mode: str):
         customtkinter.set_appearance_mode(new_appearance_mode)
 
