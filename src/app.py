@@ -214,12 +214,12 @@ class App(customtkinter.CTk):
                 ],
                 "price": 8.00
             },
-            "spaghetti carbonara": {
+            "tagliatelle carbonara": {
                 "ingredients": [
                     "200 g de guanciale (ou pancetta)",
                     "4 jaunes d'œufs",
                     "100 g de pecorino romano",
-                    "400 g de spaghetti",
+                    "400 g de tagliatelle",
                     "Sel, poivre noir"
                 ],
                 "price": 12.00
