@@ -17,7 +17,7 @@ class App(customtkinter.CTk):
         super().__init__()
         # Configure Windows 
         self.title("CookHub")
-        self.geometry(f"{1100}x{580}")
+        self.geometry(f"{1080}x{720}")
 
          # path to image
         self.image_path = 'PythonHitema/src/CookHub.png'
