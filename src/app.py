@@ -19,15 +19,15 @@ class App(customtkinter.CTk):
         self.title("CookHub")
         self.geometry(f"{1080}x{720}")
 
-         # path to image
+        # Chemin de l'image
         self.image_path = 'PythonHitema/src/CookHub.png'
         
-        # to verify if the path to image exist
+        #Condition de verification du chemin de l'image
         if not os.path.exists(self.image_path):
             print(f"Image not found: {self.image_path}")
             self.image_path = None
         
-        # configure grid layout (4x4)
+        # Permets de structuré l'infra
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure((0, 1, 2), weight=1)
