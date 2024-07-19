@@ -1,2 +1,5 @@
 customtkinter
 abc
+pillow
+tkinter
+os
