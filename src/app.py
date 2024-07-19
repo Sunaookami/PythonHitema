@@ -294,7 +294,7 @@ class App(customtkinter.CTk):
             "bruschetta à la tomate",
             "salade japonaise",
             "ceviche de daurade",
-            "spaghetti carbonara",
+            "tagliatelle carbonara",
             "tajine de poulet aux olives et citrons confits",
             "paella",
             "bœuf bourguignon"
